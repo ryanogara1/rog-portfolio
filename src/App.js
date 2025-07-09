@@ -2,6 +2,7 @@ import { FaLinkedin } from 'react-icons/fa';
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 function App() {
   useEffect(() => {
     AOS.init({ duration: 800});
@@ -25,26 +26,71 @@ function App() {
   <a href="#about" className="text-white text-5xl">↓</a>
 </div>
     </div>
-    <div className="bg-white text-gray-800 text-center max-w-4xl mx-auto py-12 space-y-4 px-4">
-      <h2 className="text-3xl font-bold">About Me</h2>
-      <p className="text-lg">
-        I’m a final-year software engineering student with a passion for creating clean, responsive, and user-focused applications.
+    <div className="bg-white text-gray-800 text-center max-w-4xl mx-auto py-12 px-4">
+      <h2 className="text-3xl font-bold mb-6">About Me</h2>
+      <img
+        src="/headshot.png"
+        alt="Ryan O'Gara headshot"
+        className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
+      />
+      <p className="text-lg max-w-xl mx-auto mb-4">
+        Final-year Software Engineering student at Queen’s University Belfast with industry experience at Liberty IT. 
       </p>
-      <ul className = "flex flex-wrap justify-center gap-4 mt-4">
-        <li className="bg-gray-100 px-4 py-2 rounded">React</li>
-        <li className="bg-gray-100 px-4 py-2 rounded">JavaScript</li>
-        <li className="bg-gray-100 px-4 py-2 rounded">Git</li>
-        <li className="bg-gray-100 px-4 py-2 rounded">TypeScript</li>
-      </ul>
+      <p className="text-lg max-w-xl mx-auto mb-6">
+        Always learning!
+      </p>
+      <div className="flex justify-center space-x-6 text-3xl text-gray-700">
+        <a href="https://github.com/ryanogara1" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="hover:text-black">
+          <i className="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ryanog111/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:text-blue-600">
+          <FaLinkedin />
+        </a>
+        <a href="mailto:ryanogara03@outlook.com" aria-label="Email" className="hover:text-red-500">
+          <i className="fas fa-envelope"></i>
+        </a>
+      </div>
     </div>
-    <div id="projects" className="bg-gray-100 py-12 text-center">
-  <h2 className="text-3xl font-bold mb-4">Projects</h2>
-  <p className="text-lg">Coming soon...</p>
-</div>
+    <div id="projects" className="bg-gray-100 py-12 text-center px-4">
+      <h2 className="text-3xl font-bold mb-8">Projects</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="bg-white p-6 rounded shadow hover:shadow-lg transition">
+          <div className="h-40 bg-gray-200 rounded mb-4"></div>
+          <h3 className="text-xl font-semibold mb-2">Project One</h3>
+          <p className="text-gray-600">Brief description of the project will go here.</p>
+        </div>
+        <div className="bg-white p-6 rounded shadow hover:shadow-lg transition">
+          <div className="h-40 bg-gray-200 rounded mb-4"></div>
+          <h3 className="text-xl font-semibold mb-2">Project Two</h3>
+          <p className="text-gray-600">Brief description of the project will go here.</p>
+        </div>
+        <div className="bg-white p-6 rounded shadow hover:shadow-lg transition">
+          <div className="h-40 bg-gray-200 rounded mb-4"></div>
+          <h3 className="text-xl font-semibold mb-2">Project Three</h3>
+          <p className="text-gray-600">Brief description of the project will go here.</p>
+        </div>
+      </div>
+    </div>
 
-<div id="services" className="bg-white py-12 text-center">
-  <h2 className="text-3xl font-bold mb-4">Services</h2>
-  <p className="text-lg">Coming soon...</p>
+<div id="services" className="bg-white py-12 text-center px-4">
+  <h2 className="text-3xl font-bold mb-8">Services</h2>
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+    <div className="bg-gray-100 p-6 rounded shadow hover:shadow-lg transition">
+      <div className="text-4xl mb-4 text-blue-600">📱</div>
+      <h3 className="text-xl font-semibold mb-2">Portfolio & Landing Pages</h3>
+      <p className="text-gray-700">Clean, responsive, and modern portfolio or landing pages built with React and Tailwind CSS.</p>
+    </div>
+    <div className="bg-gray-100 p-6 rounded shadow hover:shadow-lg transition">
+      <div className="text-4xl mb-4 text-blue-600">🔌</div>
+      <h3 className="text-xl font-semibold mb-2">Frontend API Integration</h3>
+      <p className="text-gray-700">Interactive frontend development with REST APIs or custom backend integration using modern JavaScript.</p>
+    </div>
+    <div className="bg-gray-100 p-6 rounded shadow hover:shadow-lg transition">
+      <div className="text-4xl mb-4 text-blue-600">⚡</div>
+      <h3 className="text-xl font-semibold mb-2">Performance & UX</h3>
+      <p className="text-gray-700">Boost your website's performance and user experience through clean, scalable frontend code.</p>
+    </div>
+  </div>
 </div>
 
 <div id="contact" className="bg-gray-100 py-12 px-4">
