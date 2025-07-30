@@ -6,8 +6,6 @@
 - [ ] Improve responsive layout across screen sizes
 - [ ] Add favicon and page metadata
 - [ ] Optimize images and performance before deployment
-- [ ] Update About Me section with accurate skills and a photo
-- [ ] Replace social links with icon buttons (e.g., LinkedIn, GitHub)
 
 ## ✅ Done
 - Hero section with scroll hint
@@ -17,3 +15,5 @@
 - Pushed latest changes to GitHub
 - Create Projects section with real or placeholder project
 - Refactor App.js into separate components (e.g., Hero, About, Contact)
+- Update About Me section with accurate skills and a photo
+- Replace social links with icon buttons (e.g., LinkedIn, GitHub)
