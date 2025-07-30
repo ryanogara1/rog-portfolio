@@ -2,7 +2,6 @@
 
 ## 🔧 Upcoming Tasks
 - [ ] Add real Services content
-- [ ] Refactor App.js into separate components (e.g., Hero, About, Contact)
 - [ ] Make contact form functional (send emails or save somewhere)
 - [ ] Improve responsive layout across screen sizes
 - [ ] Add favicon and page metadata
@@ -17,3 +16,4 @@
 - AOS animation integrated
 - Pushed latest changes to GitHub
 - Create Projects section with real or placeholder project
+- Refactor App.js into separate components (e.g., Hero, About, Contact)
